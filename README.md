@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <img src="TD.jpg" alt="logo" width="850"  height="auto" />
+  <img src="TD.jpeg" alt="logo" width="850"  height="auto" />
   <br/>
 
   <h3><b>TO DO on Steroids</b></h3>
