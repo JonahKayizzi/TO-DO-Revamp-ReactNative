@@ -1,11 +1,13 @@
+/* eslint-disable no-use-before-define */
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import ToDoForm from './ToDoForm';
 
 const Today = () => (
-  // eslint-disable-next-line no-use-before-define
-  <View style={styles.container}>
-    <Text>Today</Text>
-  </View>
+  <SafeAreaView style={styles.container}>
+    <Text style={styles.title}>todos</Text>
+    <ToDoForm />
+  </SafeAreaView>
 );
 export default Today;
 const styles = StyleSheet.create({
@@ -13,5 +15,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  title: {
+    fontSize: 36,
+    fontWeight: 600,
+    marginBottom: 16,
+    lineHeight: 48,
+    color: 'rgb(236, 236, 236)',
+    textAlign: 'center',
   },
 });
