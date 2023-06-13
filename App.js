@@ -1,11 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import Today from './src/components/Today';
 
 export default function App() {
   return (
+    // eslint-disable-next-line no-use-before-define
     <View style={styles.container}>
-      <Text>Hello World!</Text>
-      <StatusBar style="auto" />
+      <Today />
+      <StatusBar />
     </View>
   );
 }

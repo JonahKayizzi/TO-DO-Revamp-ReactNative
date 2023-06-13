@@ -19,6 +19,7 @@
     "jest": "^29.5.0",
     "react": "18.2.0",
     "react-native": "0.71.8",
+    "react-native-router-flux": "^4.3.1",
     "react-test-renderer": "^18.2.0"
   },
   "devDependencies": {
