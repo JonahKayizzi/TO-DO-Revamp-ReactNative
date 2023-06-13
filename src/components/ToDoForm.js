@@ -1,19 +1,37 @@
 /* eslint-disable no-use-before-define */
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, TextInput, View, Button } from 'react-native';
 
 const ToDoForm = () => (
-  <View style={styles.container}>
-    <Text style={styles.title}>todos</Text>
+  <View style={styles.formContainer}>
+    <TextInput style={styles.todoForm} placeholder="Add a task" />
+    <Button style={styles.todoBtn} title="+" />
   </View>
 );
 
 export default ToDoForm;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+  formContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    borderRadius: '50%',
+    boxShadow: '0 1px 6px 0 rgba(0, 0, 0, 0.38)',
+    justifyContent: 'space-evenly',
+    width: '100%',
+    marginBottom: 16,
+  },
+  todoForm: {
+    height: '45px',
+    borderRadius: '50px',
+    fontWeight: 400,
+    paddingLeft: '10px',
+    paddingRight: '5px',
+    fontSize: 16,
+    width: '85%',
+  },
+  todoBtn: {
+    fontWeight: 600,
+    marginRight: 10,
   },
 });
