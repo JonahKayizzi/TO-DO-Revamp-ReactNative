@@ -1,13 +1,16 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-use-before-define */
 import React from 'react';
-import {
-  StyleSheet, TextInput, View, Button,
-} from 'react-native';
+import { StyleSheet, TextInput, View, Button } from 'react-native';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const ToDoForm = () => (
   <View style={styles.formContainer}>
     <TextInput style={styles.todoForm} placeholder="Add a task..." />
-    <Button style={styles.todoBtn} title="+" />
+    <Button style={styles.todoBtn}>
+      <FontAwesomeIcon icon={faPlus} />
+    </Button>
   </View>
 );
 
