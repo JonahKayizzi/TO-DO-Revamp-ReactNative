@@ -3,7 +3,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import { StyleSheet, View, Text, CheckBox } from 'react-native-web';
+import {
+  StyleSheet, View, Text, CheckBox,
+} from 'react-native-web';
 import { TouchableOpacity } from 'react-native';
 
 const ToDoContainer = () => (

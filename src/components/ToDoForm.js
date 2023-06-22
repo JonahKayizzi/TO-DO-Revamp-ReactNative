@@ -1,7 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-use-before-define */
 import React from 'react';
-import { StyleSheet, TextInput, View, TouchableOpacity } from 'react-native';
+import {
+  StyleSheet, TextInput, View, TouchableOpacity,
+} from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
