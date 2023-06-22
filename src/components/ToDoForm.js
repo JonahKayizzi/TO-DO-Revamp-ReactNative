@@ -1,14 +1,16 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-use-before-define */
 import React from 'react';
-import { StyleSheet, TextInput, View, Button } from 'react-native';
+import { StyleSheet, TextInput, View, TouchableOpacity } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const ToDoForm = () => (
   <View style={styles.formContainer}>
     <TextInput style={styles.todoForm} placeholder="Add a task..." />
-    <Button style={styles.todoBtn} title={<FontAwesomeIcon icon={faPlus} />} />
+    <TouchableOpacity style={styles.todoBtn}>
+      <FontAwesomeIcon style={styles.addicon} icon={faPlus} />
+    </TouchableOpacity>
   </View>
 );
 
@@ -18,7 +20,8 @@ const styles = StyleSheet.create({
   formContainer: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     width: '100%',
     paddingHorizontal: 20,
     paddingVertical: 4,
@@ -31,13 +34,16 @@ const styles = StyleSheet.create({
     fontWeight: 400,
     paddingLeft: '10px',
     paddingRight: '5px',
-    fontSize: 16,
-    width: '85%',
+    fontSize: '.8em',
   },
   todoBtn: {
     fontWeight: 'bold',
-    marginRight: 10,
-    borderRadius: '15px',
-    height: '10px',
+    borderRadius: '50%',
+    backgroundColor: 'darkcyan',
+    padding: '0.2em',
+    width: '12%',
+  },
+  addicon: {
+    color: '#fff',
   },
 });
