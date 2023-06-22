@@ -8,9 +8,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 const ToDoForm = () => (
   <View style={styles.formContainer}>
     <TextInput style={styles.todoForm} placeholder="Add a task..." />
-    <Button style={styles.todoBtn}>
-      <FontAwesomeIcon icon={faPlus} />
-    </Button>
+    <Button style={styles.todoBtn} title={<FontAwesomeIcon icon={faPlus} />} />
   </View>
 );
 
