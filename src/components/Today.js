@@ -2,11 +2,13 @@
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
 import ToDoForm from './ToDoForm';
+import ToDoContainer from './ToDoContainer';
 
 const Today = () => (
   <SafeAreaView style={styles.container}>
     <Text style={styles.title}>todos</Text>
     <ToDoForm />
+    <ToDoContainer />
   </SafeAreaView>
 );
 export default Today;

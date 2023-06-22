@@ -1,10 +1,12 @@
 /* eslint-disable no-use-before-define */
 import React from 'react';
-import { StyleSheet, TextInput, View, Button } from 'react-native';
+import {
+  StyleSheet, TextInput, View, Button,
+} from 'react-native';
 
 const ToDoForm = () => (
   <View style={styles.formContainer}>
-    <TextInput style={styles.todoForm} placeholder="Add a task" />
+    <TextInput style={styles.todoForm} placeholder="Add a task..." />
     <Button style={styles.todoBtn} title="+" />
   </View>
 );
@@ -15,15 +17,16 @@ const styles = StyleSheet.create({
   formContainer: {
     display: 'flex',
     flexDirection: 'row',
-    borderRadius: '50%',
-    boxShadow: '0 1px 6px 0 rgba(0, 0, 0, 0.38)',
     justifyContent: 'space-evenly',
     width: '100%',
-    marginBottom: 16,
+    paddingHorizontal: 20,
+    paddingVertical: 4,
+    boxShadow: '0 1px 6px 0 rgba(0, 0, 0, 0.38)',
+    borderRadius: '30px',
   },
   todoForm: {
     height: '45px',
-    borderRadius: '50px',
+    borderRadius: '30px',
     fontWeight: 400,
     paddingLeft: '10px',
     paddingRight: '5px',
@@ -31,7 +34,9 @@ const styles = StyleSheet.create({
     width: '85%',
   },
   todoBtn: {
-    fontWeight: 600,
+    fontWeight: 'bold',
     marginRight: 10,
+    borderRadius: '15px',
+    height: '10px',
   },
 });
