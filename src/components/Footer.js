@@ -58,6 +58,9 @@ const styles = StyleSheet.create({
     fontSize: '1.5em',
     padding: '1em',
   },
+  addicon: {
+    color: '#fff',
+  },
   footericonactive: {
     color: '#000',
   },
