@@ -27,8 +27,6 @@ const styles = StyleSheet.create({
     height: '45px',
     borderRadius: '30px',
     fontWeight: 400,
-    paddingLeft: '10px',
-    paddingRight: '5px',
     fontSize: '.8em',
   },
 });
