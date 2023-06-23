@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     borderRadius: '50%',
     backgroundColor: 'darkcyan',
-    padding: '0.2em',
-    width: '20%',
+    padding: '1em',
+    marginBottom: '2em',
   },
   addicon: {
     color: '#fff',
