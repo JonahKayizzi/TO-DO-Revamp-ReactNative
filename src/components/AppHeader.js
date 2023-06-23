@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
     width: '100%',
     paddingHorizontal: 20,
     paddingVertical: 4,
-    boxShadow: '0 1px 6px 0 rgba(0, 0, 0, 0.38)',
   },
   profilePic: {
     width: '50px',

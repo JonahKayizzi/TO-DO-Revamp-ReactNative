@@ -3,6 +3,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import Today from './src/components/Today';
 import AppHeader from './src/components/AppHeader';
+import Footer from './src/components/Footer';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <AppHeader />
       <Today />
       <StatusBar />
+      <Footer />
     </View>
   );
 }

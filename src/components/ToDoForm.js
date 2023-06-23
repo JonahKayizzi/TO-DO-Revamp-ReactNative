@@ -1,18 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-use-before-define */
 import React from 'react';
-import {
-  StyleSheet, TextInput, View, TouchableOpacity,
-} from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { StyleSheet, TextInput, View } from 'react-native';
 
 const ToDoForm = () => (
   <View style={styles.formContainer}>
-    <TextInput style={styles.todoForm} placeholder="Add a task..." />
-    <TouchableOpacity style={styles.todoBtn}>
-      <FontAwesomeIcon style={styles.addicon} icon={faPlus} />
-    </TouchableOpacity>
+    <TextInput style={styles.todoForm} placeholder="Search..." />
   </View>
 );
 
@@ -37,15 +30,5 @@ const styles = StyleSheet.create({
     paddingLeft: '10px',
     paddingRight: '5px',
     fontSize: '.8em',
-  },
-  todoBtn: {
-    fontWeight: 'bold',
-    borderRadius: '50%',
-    backgroundColor: 'darkcyan',
-    padding: '0.2em',
-    width: '12%',
-  },
-  addicon: {
-    color: '#fff',
   },
 });
